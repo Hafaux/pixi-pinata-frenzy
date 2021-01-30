@@ -27,9 +27,14 @@ export default class Splash extends Scene {
   preload() {
     const images = {
       logo: Assets.images.logo,
+      pinata: Assets.images.pinata,
+      cactus1: Assets.images['cactus-1'],
+      cactus2: Assets.images['cactus-2'],
+      chili: Assets.images.chili,
+      particle: Assets.images.particle,
     };
     const sounds = {
-      
+      mariachi: Assets.sounds.mariachi,
     };
 
     return super.preload({ images, sounds });
