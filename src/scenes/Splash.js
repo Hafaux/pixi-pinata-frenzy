@@ -7,6 +7,9 @@ export default class Splash extends Scene {
   constructor() {
     super();
 
+    this.background = {};
+    this.background.alpha = 0;
+
     this.loadingText = new Text('0%', {
       fontSize: 75,
       fill: 0xffc900,
@@ -28,8 +31,8 @@ export default class Splash extends Scene {
     const images = {
       logo: Assets.images.logo,
       pinata: Assets.images.pinata,
-      cactus1: Assets.images['cactus-1'],
-      cactus2: Assets.images['cactus-2'],
+      'cactus-1': Assets.images['cactus-1'],
+      'cactus-2': Assets.images['cactus-2'],
       chili: Assets.images.chili,
       particle: Assets.images.particle,
     };

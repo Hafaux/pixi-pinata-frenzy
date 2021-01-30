@@ -14,17 +14,18 @@ export default class Pinata extends Container {
     this._elements = new Container();
     this._body = new Sprite.from('pinata');
 
-    this.interactive = true;
-    this.buttonMode = true;
-
-    this.on('click', this._onClick.bind(this));
     this._createBody();
+    
+    this._body.interactive = true;
+    this._body.buttonMode = true;
+
+    this._body.on('click', this._handleBodyClick.bind(this));
   }
 
   /**
    * @private
    */
-  async _onClick() {
+  async _handleBodyClick() {
     this._addChili();
     await gsap.to(this._body.scale, { x: 0.9, y: 0.9, duration: 0.1 });
     gsap.to(this._body.scale, { x: 1, y: 1, duration: 0.1 });
