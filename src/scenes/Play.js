@@ -16,8 +16,8 @@ export default class Play extends Scene {
     pinata.y = -450;
     this.addChild(pinata);
 
-    const cactus1 = new Cactus('cactus1', -600, 400);
-    const cactus2 = new Cactus('cactus2', 500, 400);
+    const cactus1 = new Cactus('cactus-1', -600, 400);
+    const cactus2 = new Cactus('cactus-2', 500, 400);
     this.addChild(cactus1);
     this.addChild(cactus2);
 
